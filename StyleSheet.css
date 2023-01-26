@@ -1,0 +1,58 @@
+.container {
+    font-family: 'MedievalSharp', cursive;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        ". . . . ."
+        ". intro intro intro ."
+        ". . tournament . ."
+        ". Smash-bros Magic yugi ."
+        ". Inventory Inventory Inventory .";
+    
+        background-image: url("https://i.pinimg.com/originals/b9/ec/ce/b9eccefe7a805021454b6ab68b23b186.jpg");
+        cursor: url("https://cur.cursors-4u.net/games/images4/gam372.gif") 4 12, auto;
+    }
+.intro { 
+    background-image: url("https://static.vecteezy.com/system/resources/previews/009/384/127/non_2x/wooden-banner-clipart-design-illustration-free-png.png");
+    background-size: contain;
+    width: 500px;
+    height: 150px;
+    text-align: center;
+    justify-self: center;
+    grid-area: intro; 
+}
+
+.tournament { 
+    text-align:center;
+    color:bisque;
+    grid-area: tournament; }
+
+.Smash-bros {
+    background-image: url("https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4bc6db1c50b02fc.png");
+    justify-self: center;
+    grid-area: Smash-bros;
+ }
+
+.Magic { 
+    background-image: url("https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4bc6db1c50b02fc.png");
+    justify-self: center;    
+    grid-area: Magic; }
+
+.yugi { 
+    background-image: url("https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/4bc6db1c50b02fc.png");
+    justify-self: center; 
+    grid-area: yugi; }
+
+.Inventory { 
+    color:bisque;
+    text-align: center;
+    grid-area: Inventory; }
+
+table, th, td {
+    color:black;
+    height: 50px;
+    align-self: left;
+    border: 1px solid black;
+    }
